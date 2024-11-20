@@ -7,17 +7,31 @@ public class StringUtilTest {
 //        if (result.equals("holaholahola")) {
 //            System.out.println("OK");
 //        }
-        if (!result.equals("holaholahola")) {
-            System.out.println("ERROR");
-        }
+//        if (!result.equals("holaholahola")) {
+//            System.out.println("ERROR");
+//        }
+//        if (!result.equals("holaholahola")) {
+//            throw new RuntimeException("ERROR");
+//        }
+        assertEquals(result, "holaholahola");
 
         String result2 = StringUtil.repeat("hola", 1);
         //System.out.println(result2);
 //        if (result2.equals("hola")) {
 //            System.out.println("OK");
 //        }
-        if (!result2.equals("hola")) {
-            System.out.println("ERROR");
+//        if (!result2.equals("hola")) {
+//            System.out.println("ERROR");
+//        }
+//        if (!result2.equals("holahola")) {
+//            throw new RuntimeException("ERROR");
+//        }
+        assertEquals(result2, "hola");
+    }
+
+    private static void assertEquals(String actual, String expected) {
+        if (!actual.equals(expected)) {
+            throw new RuntimeException(actual + " is not equal to " + expected);
         }
     }
 }
