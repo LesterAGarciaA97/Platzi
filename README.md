@@ -4,3 +4,4 @@
 
 #### Folder 01 -----> Fundamentos de pruebas de software
 #### Folder 02 -----> Introducción a la automatización de pruebas
+#### Folder 03 -----> Curso básico de testing en Java
